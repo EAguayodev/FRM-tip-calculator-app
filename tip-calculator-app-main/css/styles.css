@@ -4,6 +4,282 @@
     padding: 0;
 }
 
+:root {
+     /* Primary colors */
+    --strong-cyan: hsl(172, 67%, 45%);
+    /* Neutral colors */
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --dark-grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan-inputs: hsl(185, 41%, 84%);
+    --light-grayish-cyan-hovers: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);  
+    /* font sizes */
+    --form-inputs: 24px;
+}
+
 body {
+    background-color: hsl(185, 41%, 84%);
     font-family: 'Space Mono', monospace;
+}
+
+h1 {
+    color: var(--very-dark-cyan);
+    font-weight: 400;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 14rem;
+    justify-content: center;
+}
+
+.calc__card {
+    border-radius: 15px;
+    background-color: var(--white);
+    width: 374px;
+    height: 790px;
+}
+
+.left__col {
+
+}
+
+.dollar__submission {
+
+}
+
+label {
+    color: var(--dark-grayish-cyan);
+    margin: 1rem 0 0 2rem;
+}
+
+.box__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.box__select-1, .box__select-2, 
+.box__select-4, .box__select-5 
+ {
+    background-color: var(--very-dark-cyan);
+    border-radius: 5px;
+    width: 147px;
+    height: 48px;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 24px;
+    text-align: center;
+    margin: 15px 0;
+    padding-top: 5px;
+    font-weight: 700;
+}
+
+.box__select-1 {
+    margin: 1rem 0 0 1rem;
+}
+
+.box__select-1:hover,.box__select-2:hover,
+.box__select-4:hover, .box__select-5:hover {
+    background-color: hsl(172, 56%, 74%);
+}
+
+.box__select-3 {
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+    cursor: pointer;
+    width: 147px;
+    height: 48px;
+    font-size: 24px;
+    padding-top: 5px;
+    font-weight: 700;
+}
+
+.box__select-4 {
+    margin-top: -0.1rem;
+}
+
+.box__select-5 {
+     margin: -0.1rem 0 0 1rem;
+}
+
+ .box__select-3 {
+    margin: 0 0 0 1rem;
+}
+
+.receipt__bill {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: var(--light-grayish-cyan-hovers);
+    background-image: url(/images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 7px 7px;
+    padding-left: 30px;
+    width: 310px;
+    height: 46px;
+    margin: 2rem 0 0 2rem;
+}
+
+.person__input {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-image: url(/images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: 7px 7px;
+    padding-left: 30px;
+    background-color: var(--light-grayish-cyan-hovers);
+    width: 310px;
+    height: 46px;
+    margin: 2rem 0 0 2rem;
+}
+
+.person__input::placeholder {
+    font-size: var(--form-inputs);
+    color: var(--very-dark-cyan);
+    font-weight: 700;
+    padding-left: 15.5rem;
+}
+
+.receipt__bill::placeholder {
+    color: var(--very-dark-cyan);
+    font-size: var(--form-inputs);
+    font-weight: 700;
+    padding-left: 12rem;
+}
+
+.box__select-custom {
+    border-radius: 5px;
+    background-color: hsl(180, 26%, 95%);
+    color: var(--very-dark-cyan);
+    cursor: pointer;
+    width: 147px;
+    height: 48px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: var(--form-inputs);
+    font-weight: 700;
+}
+
+.group__submission {
+    border-radius: 5px;
+}
+
+.right__column {
+    background-color: var(--very-dark-cyan);
+    border-radius: 10px;
+    width: 325px;
+    height: 259px;
+    margin: 1rem 0 0 1.5rem;
+}
+
+.right__column p {
+    color: var(--white);
+    margin: 3rem 0 0 2rem;
+}
+
+.right__column small {
+    color: var(--dark-grayish-cyan);
+    margin: 3rem 0 0 2rem;
+}
+
+.right__column input {
+    background-color: var(--light-grayish-cyan);
+    border: none;
+    outline: none;
+    margin: 1rem 0 0 30px;
+}
+
+.right__column input::placeholder {
+    color: var(--strong-cyan);
+    font-size: var(--form-inputs);
+    font-weight: 700;
+    padding-left: 4rem;
+    padding: 30px;
+}
+
+.btn-reset {
+    border: none;
+    border-radius: 5px;
+    background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+    cursor: pointer;
+    width: 282px;
+    height: 49px;
+    font-size: 24px;
+    margin: 2rem  0 0 1.5rem;
+}
+
+.btn-reset:hover {
+    background-color: hsl(172, 56%, 74%);
+}
+
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .calc__card {
+        width: 703px;
+        height: 371px;
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+    }
+
+    .left__col {
+        width: 329px;
+        height: 317px;
+    }
+
+    .right__column {
+        width: 317px;
+        height: 319px;
+    }
+
+    .box__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .box__select-1, .box__select-2, 
+    .box__select-4, .box__select-5 {
+        width: 91px;
+        height: 37px;
+    }
+
+    .box__select-custom, .box__select-3 {
+         width: 91px;
+        height: 37px;
+    }
+
+    .box__select-3 {
+        margin: 1rem 0 0 -0.5rem;
+    }
+
+    .box__select-4 {
+        margin-left: 1rem;
+    }
+
+    .box__select-5 {
+        margin-left: 0.2rem;
+    }
 }

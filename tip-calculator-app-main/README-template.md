@@ -54,8 +54,6 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
 - [Styled Components](https://styled-components.com/) - For styles
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
@@ -82,7 +80,7 @@ const proudOfThisFunc = () => {
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+
 
 ### Continued development
 
@@ -92,7 +90,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.w3schools.com/formvalidation) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- (https://stackoverflow.com/questions/917610/put-icon-inside-input-element-in-a-form) - This solution on the input helped me place the img icons required to be inside (both person and bill icon). I had originally put them outside the input tags and planned to use  
 - [Example resource 2](?) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
@@ -100,10 +98,10 @@ Use this section to outline areas that you want to continue focusing on in futur
 ## Author
 
 - Website - [Eric Aguayo, Akshat vishwakarma](https://www.your-site.com)
-- Frontend Mentor - [@EricAguayo90, ](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@DevEric90, ](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@EricAguayo90](https://www.frontendmentor.io/profile/EricAguayo90)
+- Twitter - [@DevEric90](https://www.twitter.com/yourusername)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+
 
 ## Acknowledgments
 

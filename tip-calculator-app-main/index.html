@@ -2,65 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Tip calculator app</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js"></script>
 </head>
 <body>
-  <img class="logo" src="images/logo.svg" alt="">
-<main>
+  <img class="logo" src="images/logo.svg" alt="logo">
+  <main>
     <div class="calc__card">
       <div class="left__col">
         <div>
-        <form action="submit">
+        <form id="billForm" action="submit">
           <label for="bill">Bill
+           <input type="number" class="receipt__bill" id="billSubmit" placeholder="142.55" min="0" max="30" required>
           </label>
-          <div class="dollar__submission">
-            <input type="text" class="receipt__bill" id="billSubmit" placeholder="142.55" min="0" max="30" required>
-          </div>
         </form>
       </div>
       <div>
       <label for="bill">Select Tip %</label>
         <div class="box__grid">
-          <div class="box__select-1">5%</div>
-          <div class="box__select-2">10%</div>
-          <div class="box__select-3">15%</div>
-          <div class="box__select-4">25%</div>
-          <div class="box__select-5">50%</div>
-          <div class="box__select-custom">Custom</div>
+          <button class="box__select-1">5%</button>
+          <button class="box__select-2">10%</button>
+          <button class="box__select-3">15%</button>
+          <button class="box__select-4">25%</button>
+          <button class="box__select-5">50%</button>
+          <button class="box__select-custom">Custom</button>
         </div>
       </div>
-      <form action="">
-        <label for="">Number of People</label>
-        <div class="group__submission">
-          <input type="text" class="person__input" id="personReserve" min="1" max="30" placeholder="5" required>
-        </div>
+      <form id="form" action="">
+          <label for="">Number of People <p class="error" id="error"></p>
+          <input onclick="" type="number" name="number" class="person__input" id="personReserve" min="1" max="30" placeholder="5" required>
+        </label>
       </form>
       </div>
       <div class="right__column">
         <div>
           <div>
-            <p>Tip Amount</p>
-            <small>/ person</small>
-          <input type="number" name="tipamount" class="" id="tipAmount" placeholder="$4.27">
+            <h2>Tip Amount</h2>
+            <p>/ person</p>
+            <input onclick="" type="number" name="tipamount" class="" id="tipAmount" placeholder="$4.27">
           </div>
-            <div>
-            <p>Total</p>
-            <small>/ person</small>
-          <input type="number" name="total" class="" id="totalPrice"  placeholder="$32.79">
+          <div>
+            <h2>Total</h2>
+            <p>/ person</p>
+            <input onclick="" type="number" name="total" class="" id="totalPrice"  placeholder="$32.79">
             </div>
         </div>
         <div>
-          <button class="btn-reset">Reset</button>
+          <button class="btn-reset" onclick="buttonReset()">Reset</button>
         </div>
       </div>
     </div>
 </main>
-<script src="js/script.js"></script>
 </body>
 </html>

@@ -33,8 +33,8 @@ function calculateTip() {
       const totalPerPerson = bill / people + tipPerPerson;
 
       // Display calculated values in the input fields
-      tipAmount.value = `$${tipPerPerson.toFixed(2)}`;
-      totalPrice.value = `$${totalPerPerson.toFixed(2)}`;
+      tipAmount.value = `${tipPerPerson.toFixed(2)}`;
+      totalPrice.value = `${totalPerPerson.toFixed(2)}`;
     } else {
       // Reset the input fields if conditions are not met
       tipAmount.value = "";

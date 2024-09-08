@@ -9,52 +9,67 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="js/script.js"></script>
+  <script src="js/script.js" defer></script>
 </head>
 <body>
-  <img class="logo" src="images/logo.svg" alt="logo">
   <main>
+    <img class="logo" src="images/logo.svg" alt="logo">
     <div class="calc__card">
       <div class="left__col">
         <div>
-        <form id="billForm" action="submit">
+        <form id="billForm">
           <label for="bill">Bill
-           <input type="number" class="receipt__bill" id="billSubmit" placeholder="142.55" min="0" max="30" required>
+           <input type="number" class="receipt__bill" id="billSubmit" placeholder="0">
           </label>
         </form>
       </div>
       <div>
       <label for="bill">Select Tip %</label>
         <div class="box__grid">
-          <button class="box__select-1">5%</button>
-          <button class="box__select-2">10%</button>
-          <button class="box__select-3">15%</button>
-          <button class="box__select-4">25%</button>
-          <button class="box__select-5">50%</button>
-          <button class="box__select-custom">Custom</button>
+          <button class="box__select box__select-1">5%</button>
+          <button class="box__select box__select-2">10%</button>
+          <button class="box__select box__select-3">15%</button>
+          <button class="box__select box__select-4">25%</button>
+          <button class="box__select box__select-5">50%</button>
+          <button class="box__select box__select-custom">Custom</button>
         </div>
       </div>
       <form id="form" action="">
-          <label for="">Number of People <p class="error" id="error"></p>
-          <input onclick="" type="number" name="number" class="person__input" id="personReserve" min="1" max="30" placeholder="5" required>
-        </label>
+        <div style="display: flexbox;">
+         
+          <label for="">Number of People</label> <p class="error" id="error"></p>
+        </div>
+        <div>
+          <input onclick="" type="number" name="number" class="person__input" id="personReserve" placeholder="0">
+
+        </div>
       </form>
       </div>
       <div class="right__column">
-        <div>
-          <div>
-            <h2>Tip Amount</h2>
-            <p>/ person</p>
-            <input onclick="" type="number" name="tipamount" class="" id="tipAmount" placeholder="$4.27">
-          </div>
-          <div>
-            <h2>Total</h2>
-            <p>/ person</p>
-            <input onclick="" type="number" name="total" class="" id="totalPrice"  placeholder="$32.79">
+        <div class="column-row">
+          <form action="">
+            <div class="select-amount">
+              <div>
+                <h2>Tip Amount</h2>
+                <p>/ person</p>
+              </div>
+              <div>
+                <input type="number" name="tipamount" id="tipAmount" placeholder="$0.00">
+              </div>
             </div>
-        </div>
-        <div>
-          <button class="btn-reset" onclick="buttonReset()">Reset</button>
+            <div class="select-amount">
+              <div>
+                <h2>Total</h2>
+                <p>/ person</p>
+              </div>
+              <div>
+                <input type="number" name="total" class="" id="totalPrice" placeholder="$0.00">
+              </div>
+            </div>
+            <div>
+              <button class="btn-reset" onclick="buttonReset()">Reset</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>

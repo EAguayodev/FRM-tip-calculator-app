@@ -16,6 +16,7 @@
     --white: hsl(0, 0%, 100%);  
     /* font sizes */
     --form-inputs: 24px;
+    --error: #E17457;
 }
 
 body {
@@ -29,15 +30,12 @@ h1 {
     text-align: center;
 }
 
-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+main{
+    margin: 1.5rem auto;
 }
 
 .logo {
-    margin-left: 14rem;
+    margin-left: 10rem;
     
 }
 
@@ -46,6 +44,7 @@ main {
     background-color: var(--white);
     width: 375px;
     height: 790px;
+    margin: 0 auto;
 }
 
 label {
@@ -58,8 +57,7 @@ label {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.box__select-1, .box__select-2, 
-.box__select-4, .box__select-5 
+.box__select
  {
     background-color: var(--very-dark-cyan);
     border-radius: 5px;
@@ -115,20 +113,20 @@ label {
     outline: none;
     border-radius: 5px;
     background-color: var(--light-grayish-cyan-hovers);
-    background-image: url(/images/icon-dollar.svg);
+    background-image: url(../images/icon-dollar.svg);
     background-repeat: no-repeat;
     background-position: 8px 17px;
     padding-left: 30px;
     width: 310px;
     height: 46px;
-    margin: 2rem 0 0 2rem;
+    margin: 1.5rem 0 0 2rem;
 }
 
 .person__input {
     border: none;
     outline: none;
     border-radius: 5px;
-    background-image: url(/images/icon-person.svg);
+    background-image: url(../images/icon-person.svg);
     background-repeat: no-repeat;
     background-position: 8px 17px;
     padding-left: 30px;
@@ -178,8 +176,8 @@ label {
     background-color: var(--very-dark-cyan);
     border-radius: 10px;
     width: 325px;
-    height: 259px;
-    margin: 4rem 0 0 1.5rem;
+    height: 351px;
+    margin: 1rem 0 0 1.5rem;
 }
 
 .right__column h2 {
@@ -209,6 +207,11 @@ label {
     padding: 40px;
 }
 
+.select-amount {
+    display: flex;
+    justify-content: space-around;
+}
+
 .btn-reset {
     border: none;
     border-radius: 5px;
@@ -232,10 +235,7 @@ label {
     }
     
     main {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        margin: 0 auto;
     }
 
     h1 {
@@ -248,6 +248,7 @@ label {
         display: flex;
         justify-content: space-around;
         align-content: center;
+        margin: 0 auto;
     }
 
     .left__col {
@@ -263,8 +264,13 @@ label {
 
     .right__column {
         width: 414px;
-        height: 417px;
+        height: 418px;
         margin: 1.5rem 0 0 1.5rem;
+    }
+
+    .select-amount {
+        display: flex;
+        justify-content: space-around;
     }
 
     .box__grid {
@@ -272,8 +278,7 @@ label {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .box__select-1, .box__select-2, .box__select-3, 
-    .box__select-4, .box__select-5, .box__select-custom {
+    .box__select{
         width: 117px;
         height: 47px;
     }

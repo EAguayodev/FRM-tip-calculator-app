@@ -116,6 +116,9 @@ label {
     background-image: url(../images/icon-dollar.svg);
     background-repeat: no-repeat;
     background-position: 8px 17px;
+    color: var(--very-dark-cyan);
+    font-size: 2rem;
+    font-weight: 700;
     padding-left: 30px;
     width: 310px;
     height: 46px;
@@ -134,6 +137,9 @@ label {
     width: 310px;
     height: 46px;
     margin: 2rem 0 0 2rem;
+    color: var(--very-dark-cyan);
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .person__input::placeholder {
@@ -148,6 +154,12 @@ label {
     font-size: var(--form-inputs);
     font-weight: 700;
     padding-left: 12rem;
+}
+
+.receipt__bill:hover{
+    border: 2px solid var(--strong-cyan);
+    background-color: var(--light-grayish-cyan-hovers);
+    cursor: pointer;
 }
 
 .box__select-custom {
@@ -176,7 +188,7 @@ label {
     background-color: var(--very-dark-cyan);
     border-radius: 10px;
     width: 325px;
-    height: 351px;
+    height: 315px;
     margin: 1rem 0 0 1.5rem;
 }
 
@@ -197,6 +209,8 @@ label {
     margin: 1rem 0 0 30px;
     height: 30px;
     width: 119px;
+    color: var(--strong-cyan);
+    font-size: 2rem;
 }
 
 .right__column input::placeholder {
@@ -226,6 +240,10 @@ label {
 
 .btn-reset:hover {
     background-color: hsl(172, 56%, 74%);
+}
+
+.error-outline {
+    border: 2px solid var(--error);
 }
 
 @media (min-width: 768px) {
